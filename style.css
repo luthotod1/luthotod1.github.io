@@ -1,0 +1,356 @@
+/*
+SPACING SYSTEM (px)
+2 / 4 / 8 / 12 / 16 / 24 / 32 / 48 / 64 / 80 / 96 / 128
+
+FONT SIZE SYSTEM (px)
+10 / 12 / 14 / 16 / 18 / 20 / 24 / 30 / 36 / 44 / 52 / 62 / 74 / 86 / 98
+*/
+/* main color: #087f5b*/
+/* grey color:  #343a40*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  font-size: 62.5%;
+}
+body {
+  font-family: "inter", sans-serif, "Franklin Gothic Medium", "Arial Narrow",
+    Arial, sans-serif;
+  position: relative;
+}
+/* ################# */
+/* GENERAL COMPONENTS */
+/* ################# */
+
+.float h2,
+.float p {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* ################# */
+/* NAVIGATION SECTION */
+/* ################# */
+
+header .icon {
+  stroke: #087f5b;
+}
+header {
+  height: 9.4rem;
+  position: fixed;
+  z-index: 1000;
+  top: 0;
+  left: 0;
+  background-color: #fff;
+}
+.icon {
+  width: 2.4rem;
+  height: 2.4rem;
+  stroke: #edf1f0;
+  margin-right: 1.2rem;
+}
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+header {
+  display: flex;
+  position: sticky;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: solid #087f5b 2px;
+  border-top: solid #087f5b 2px;
+  padding: 3.2rem;
+}
+.links:hover,
+.links:active {
+  text-decoration: underline !important;
+}
+.links:link,
+.links:visited {
+  text-decoration: none;
+  font-size: 2.4rem;
+  color: #087f5b;
+  margin-right: 3.2rem;
+  font-weight: 550;
+  transition: all 0.4s;
+}
+.links:first-child {
+  text-decoration: underline;
+}
+
+/* ################# */
+/* HERO SECTION */
+/* ################# */
+.hero {
+  color: #fff;
+  background-image: linear-gradient(
+      rgba(134, 142, 150, 0.63),
+      rgba(134, 142, 150, 0.63)
+    ),
+    url(images/dose-media.jpg);
+  height: 80vh;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.btn--shop {
+  font-size: 2.4rem;
+}
+.btn:hover {
+  background-color: #20c997;
+}
+
+h1 {
+  font-size: 4.8rem;
+  margin-bottom: 32px;
+  font-family: "Gupter", sans-serif;
+}
+.tech {
+  font-size: 2.4rem;
+  margin-bottom: 3.2rem;
+  font-family: "Anek Devanagari", serif;
+}
+
+/* ################# */
+/* ABOUT US SECTION */
+/* ################# */
+.story {
+  background-color: #20c997;
+}
+.box {
+  background-color: #fff;
+  color: black;
+  padding: 2.4rem;
+}
+.boxes {
+  display: flex;
+  justify-content: space-between;
+  gap: 2.4rem;
+  padding: 3.2rem;
+}
+
+/* ################# */
+/* PRODUCTS SECTION */
+/* ################# */
+
+.cart {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 1.2rem;
+}
+.add {
+  border: none;
+  margin-right: 1.2rem;
+  padding: 0.8rem 1.2rem;
+  font-size: 1.8rem;
+  font-weight: 300;
+  background-color: #087f5b;
+  color: #cfcccc !important;
+}
+.add:hover {
+  background-color: #20c997;
+  cursor: pointer;
+}
+.spe:hover {
+  background-color: #087f5b;
+}
+
+.brand-name {
+  font-weight: 300;
+  font-size: 2.4rem;
+  color: #868e96;
+}
+
+.btn {
+  font-size: 1.8rem;
+  background-color: #087f5b;
+  color: #fff !important;
+  display: inline-block;
+  padding: 1.2rem 2.4rem;
+  text-decoration: none;
+  transition: all 0.4s;
+}
+article {
+  padding: 0 3.2rem;
+  background-color: #edf1f0;
+}
+.cart {
+  font-size: 1.8rem;
+  /* background-color: #087f5b; */
+  color: #fff !important;
+  display: flex;
+}
+
+.products {
+  margin-top: 4.8rem;
+  display: flex;
+
+  align-items: center;
+  padding: 3.2rem;
+  gap: 2.4rem;
+}
+.pic {
+  width: 100%;
+  height: 25rem;
+  margin-bottom: 2.4rem;
+}
+h3 {
+  font-size: 1.8rem;
+  margin-bottom: 2.4rem;
+}
+.destript {
+  font-size: 1.6rem;
+  line-height: 1.6;
+  margin-bottom: 2.4rem;
+}
+
+h2 {
+  font-size: 3.6rem;
+  padding: 2.4rem;
+}
+.float p {
+  font-size: 2.4rem;
+  margin-bottom: 18px;
+}
+.product {
+  border: #868e96 solid 1px;
+}
+.product:last-child {
+  background-color: #20c997;
+  color: #262727;
+  position: relative;
+  overflow: hidden;
+}
+.product:last-child::after {
+  content: "Exclusive";
+  position: absolute;
+  top: 0;
+  right: 0;
+  background-color: #20c9969f;
+  font-size: 1.6rem;
+  padding: 1.2rem;
+  font-weight: 700;
+  /* transform: rotate(45deg); */
+}
+.product:last-child .price {
+  color: #262727;
+}
+.product-name {
+  font-size: 3rem;
+  margin-bottom: 1.6rem;
+  padding: 1.2rem;
+}
+.price {
+  color: #087f5b;
+  font-weight: 900;
+  font: 2.4rem;
+  padding: 1.2rem;
+}
+
+.grid {
+  margin-top: 4.8rem;
+  display: grid;
+
+  column-gap: 2.4rem;
+}
+
+.features {
+  padding: 6.4rem 4.8rem;
+  display: flex;
+  gap: 2.4rem;
+}
+.feature {
+  padding: 2rem;
+  border: 2px solid #ccc;
+}
+.feature-icon {
+  /* color: #087f5b; */
+  width: 2rem;
+  height: 2rem;
+  text-align: center;
+  background-color: #087f5b;
+  padding: 0.8rem;
+  border-radius: 50%;
+  margin-bottom: 1.6rem;
+}
+.feature-title {
+  font-size: 2.4rem;
+  font-weight: 600;
+  margin-bottom: 2.4rem;
+}
+.feature-text {
+  font-size: 1.6rem;
+  line-height: 1.6rem;
+}
+.feature-heading {
+  display: grid;
+  text-align: center;
+  font-size: 3.2rem;
+  margin-top: 4.8rem;
+  padding-bottom: 0 !important;
+  justify-content: center;
+}
+/* ################# */
+/* TESTIMONALS SECTION */
+/* ################# */
+.testimonal {
+  grid-template-columns: 1fr 3fr;
+}
+.testimonal2 {
+  grid-template-columns: 3fr 1fr;
+}
+.grid p {
+  font-size: 2.4rem;
+  line-height: 1.5;
+}
+.customer-name {
+  font-size: 1.6rem;
+  color: #777;
+}
+/* ################# */
+/* CONTACT US SECTION */
+/* ################# */
+
+.tex {
+  display: block;
+  height: 5rem;
+  padding: 8px;
+  font-size: 1.8rem;
+  width: 30rem;
+  margin-bottom: 1.2rem;
+  border-radius: 4px;
+}
+textarea {
+  padding: 0.8rem;
+  font-size: 18px;
+  margin-bottom: 1.2rem;
+}
+
+.submit {
+  display: block !important;
+}
+.contact,
+footer {
+  display: flex;
+  justify-content: center;
+}
+
+/* ################# */
+/* FOOTER SECTION */
+/* ################# */
+footer {
+  font-size: 1.2rem;
+  padding: 3rem;
+  margin-bottom: 10rem;
+}
+.float {
+  padding-top: 3.2rem;
+}
